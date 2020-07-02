@@ -15,7 +15,7 @@ get_latest_release() {
 
 # Getting URL to release archive
 VERSION=$(get_latest_release $REPO)
-RELEASE=https://github.com/$MK_REPO/archive/$VERSION.tar.gz
+RELEASE=https://github.com/$REPO/archive/$VERSION.tar.gz
 
 # Downloading and extracting release
 echo Downloading version $VERSION from $RELEASE
