@@ -19,7 +19,7 @@ RELEASE=https://github.com/$REPO/archive/$VERSION.tar.gz
 
 # Downloading and extracting release
 echo Downloading version $VERSION from $RELEASE
-curl -Ls $RELEASE | tar zxfm -
+curl -Ls $RELEASE | tar zxfm - devilbox-docker-compose-makefile-$VERSION/.mk-lib --strip-components=1
 echo 'Created .mk-lib'
 
 # Creating Makefile if needed
